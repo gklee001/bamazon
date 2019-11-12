@@ -56,10 +56,10 @@ function updateOrder(product) {
         "UPDATE products SET ? WHERE ?",
         [
             {
-                stock_quantity: -parseInt(num)
+                stock_quantity: console.log(product.quantity)
             },
             {
-                item_id: parseInt(product.product)
+                item_id: parseInt("this the product.product" + product.product)
             }
         ],
         function (err, res) {
